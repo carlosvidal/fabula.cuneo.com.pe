@@ -1,0 +1,612 @@
+<!doctype html>
+
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Fábula by Cúneo | Moda Sensible para la Infancia</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#00B4CC",
+              "background-light": "#FCF7F8" /* Soft Cream */,
+              "background-dark": "#073B4C",
+              terracotta: "#FE5D9F",
+              sage: "#5C374C",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .serif-font {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-[#073B4C] dark:text-white transition-colors duration-300"
+  >
+    <!-- TopNavBar -->
+    <header
+      class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-[#dde5dc] dark:border-[#2a3a27]"
+    >
+      <div
+        class="max-w-[1200px] mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <div class="flex items-center gap-3">
+          <div class="size-8 text-primary">
+            <svg
+              fill="none"
+              viewbox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold tracking-tight serif-font">
+            FÁBULA
+            <span
+              class="text-sm font-normal uppercase tracking-widest block -mt-1 opacity-70"
+              >by Cúneo</span
+            >
+          </h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#nosotros"
+            >Nosotros</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#historia"
+            >Historia</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#materiales"
+            >Materiales</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#personajes"
+            >Personajes</a
+          >
+        </nav>
+        <button
+          class="bg-primary text-[#073B4C] px-6 py-2.5 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-primary/20 transition-all"
+        >
+          Descubre FÁBULA
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- HeroSection -->
+      <section class="relative h-[85vh] flex items-center justify-center px-4">
+        <div class="absolute inset-4 rounded-xl overflow-hidden">
+          <div class="absolute inset-0 bg-black/30 z-10"></div>
+          <picture class="w-full h-full">
+            <source
+              srcset="assets/img/hero-x2.webp 2x, assets/img/hero.webp 1x"
+              type="image/webp"
+            />
+            <img
+              src="assets/img/hero.webp"
+              alt="Children playing happily in soft cotton clothes"
+              class="w-full h-full object-cover"
+            />
+          </picture>
+        </div>
+        <div class="relative z-20 text-center max-w-3xl px-6">
+          <h1
+            class="text-white text-5xl md:text-7xl font-bold serif-font leading-tight mb-6"
+          >
+            Moda sensible para la infancia
+          </h1>
+          <p
+            class="text-white/90 text-lg md:text-xl font-light mb-8 max-w-xl mx-auto"
+          >
+            Prendas infantiles que combinan confort extremo, diseño peruano y
+            storytelling.
+          </p>
+          <button
+            class="bg-primary text-[#073B4C] px-8 py-4 rounded-xl text-lg font-bold hover:scale-105 transition-transform"
+          >
+            Explora la Colección
+          </button>
+        </div>
+      </section>
+      <!-- Who We Are (FeatureSection) -->
+      <section class="py-24 px-6 max-w-[1200px] mx-auto" id="nosotros">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="space-y-6">
+            <span
+              class="text-terracotta font-bold tracking-widest uppercase text-sm"
+              >Identidad Peruana</span
+            >
+            <h2 class="text-4xl font-bold serif-font">Quiénes Somos</h2>
+            <p class="text-lg text-sage dark:text-gray-300 leading-relaxed">
+              FÁBULA by Cúneo es una marca de moda infantil diseñada en Perú que
+              celebra la sensibilidad y el confort. Nacimos de la necesidad de
+              crear prendas que respeten la piel y el movimiento de los niños,
+              permitiéndoles ser ellos mismos.
+            </p>
+            <div class="grid grid-cols-2 gap-6 pt-6">
+              <div class="space-y-2">
+                <span class="material-symbols-outlined text-primary text-3xl"
+                  >child_care</span
+                >
+                <h3 class="font-bold">Diseño Centrado</h3>
+                <p class="text-sm text-sage">
+                  Pensado para el desarrollo infantil.
+                </p>
+              </div>
+              <div class="space-y-2">
+                <span class="material-symbols-outlined text-primary text-3xl"
+                  >public</span
+                >
+                <h3 class="font-bold">Cultura Local</h3>
+                <p class="text-sm text-sage">Inspiración en raíces peruanas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="aspect-square bg-terracotta/10 rounded-full absolute -top-10 -right-10 w-64 h-64 -z-10"
+            ></div>
+            <div
+              class="rounded-xl overflow-hidden aspect-[4/5] shadow-2xl relative"
+              id="carousel-nosotros"
+            >
+              <img
+                alt="Vestido 1-1"
+                class="carousel-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-1000"
+                src="assets/img/vestido-1-1.webp"
+                srcset="assets/img/vestido-1-1-x2.webp 2x"
+              />
+              <img
+                alt="Vestido 1-2"
+                class="carousel-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000"
+                src="assets/img/vestido-1-2.webp"
+                srcset="assets/img/vestido-1-2-x2.webp 2x"
+              />
+              <img
+                alt="Vestido 2-1"
+                class="carousel-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000"
+                src="assets/img/vestido-2-1.webp"
+                srcset="assets/img/vestido-2-1-x2.webp 2x"
+              />
+              <img
+                alt="Vestido 2-2"
+                class="carousel-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000"
+                src="assets/img/vestido-2-2.webp"
+                srcset="assets/img/vestido-2-2-x2.webp 2x"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our History (Card Layout) -->
+      <section class="py-24 bg-white dark:bg-[#1a2a16]" id="historia">
+        <div class="max-w-[1000px] mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold serif-font mb-4">
+              Nuestra historia
+            </h2>
+            <div class="h-1 w-20 bg-primary mx-auto"></div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row items-center gap-12 p-8 rounded-3xl bg-background-light dark:bg-background-dark border border-[#dde5dc] dark:border-[#2a3a27]"
+          >
+            <div class="flex-1 space-y-6">
+              <h3 class="text-2xl font-bold serif-font italic text-terracotta">
+                Un viaje de maternidad
+              </h3>
+              <p class="text-sage dark:text-gray-300 leading-relaxed text-lg">
+                Nuestra fundadora buscaba prendas que no solo vistieran, sino
+                que abrazaran a su hija. Descubrió que la mayoría de la ropa
+                infantil priorizaba la estética sobre la sensibilidad táctil.
+              </p>
+              <p class="text-sage dark:text-gray-300 leading-relaxed">
+                Así nació FÁBULA, buscando el equilibrio perfecto entre una
+                estética atemporal y el bienestar extremo que solo los
+                materiales naturales de alta calidad pueden ofrecer.
+              </p>
+            </div>
+            <div
+              class="flex-1 w-full aspect-square rounded-2xl overflow-hidden shadow-xl"
+              data-alt="Founder working with fabrics in a bright studio"
+            >
+              <img
+                alt="History story"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLicg2moya5lkAdOmH8-gFAEL_0qxlTgK0j7uHuISuP_7IJYEyMG-QRODpHow0wkgYaezTZxlwrWiQT8CoBmxSjNpTs58ZIBqG91h5pBGOZsvLwMXpnxkOIxulXLdF822kk4c13MBVsouQvoKYMa7j4IPA88mVb6tsGLQW1F6uCGp8T116mIVBbzMttFIh5VLFznMS5vt7fxY_Y0pWc1k1d9TP96lEdFheLOPSuua4AeQ9HkfR9L5scP63Dm0e5_E-6smEpE0KM-A"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Vision (Manifesto Section) -->
+      <section class="py-32 px-6 text-center bg-terracotta text-white">
+        <div class="max-w-3xl mx-auto space-y-10">
+          <span class="material-symbols-outlined text-5xl">auto_awesome</span>
+          <blockquote
+            class="text-3xl md:text-5xl font-light serif-font italic leading-tight"
+          >
+            "Creemos que la sensibilidad es un talento y una fortaleza, no una
+            debilidad."
+          </blockquote>
+          <div class="flex flex-wrap justify-center gap-8 pt-6">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined">check_circle</span>
+              <span class="text-sm font-bold uppercase tracking-widest"
+                >Confort Absoluto</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined">check_circle</span>
+              <span class="text-sm font-bold uppercase tracking-widest"
+                >Sin Género</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined">check_circle</span>
+              <span class="text-sm font-bold uppercase tracking-widest"
+                >Herencia Cultural</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Materials Section -->
+      <section
+        class="py-24 px-6 bg-background-light dark:bg-background-dark"
+        id="materiales"
+      >
+        <div class="max-w-[1200px] mx-auto">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4"
+          >
+            <div class="max-w-xl">
+              <h2 class="text-4xl font-bold serif-font mb-4">
+                Calidad en cada fibra
+              </h2>
+              <p class="text-sage">
+                Utilizamos procesos innovadores para garantizar que cada prenda
+                sea una caricia para la piel.
+              </p>
+            </div>
+            <a
+              class="text-terracotta font-bold flex items-center gap-2 hover:underline"
+              href="#"
+            >
+              Ver procesos
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white dark:bg-[#1a2a16] p-8 rounded-2xl border border-[#dde5dc] dark:border-[#2a3a27] transition-all hover:shadow-xl group"
+            >
+              <div
+                class="size-14 bg-primary/20 rounded-full flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors"
+              >
+                <span class="material-symbols-outlined text-3xl">eco</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">100% Algodón</h3>
+              <p class="text-sage text-sm leading-relaxed">
+                Fibras naturales peruanas de fibra larga para una suavidad
+                inigualable y durabilidad extrema.
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-[#1a2a16] p-8 rounded-2xl border border-[#dde5dc] dark:border-[#2a3a27] transition-all hover:shadow-xl group"
+            >
+              <div
+                class="size-14 bg-primary/20 rounded-full flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors"
+              >
+                <span class="material-symbols-outlined text-3xl">print</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Impresión Digital</h3>
+              <p class="text-sage text-sm leading-relaxed">
+                Tintas ecológicas a base de agua que no irritan y mantienen la
+                transpirabilidad de la tela.
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-[#1a2a16] p-8 rounded-2xl border border-[#dde5dc] dark:border-[#2a3a27] transition-all hover:shadow-xl group"
+            >
+              <div
+                class="size-14 bg-primary/20 rounded-full flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors"
+              >
+                <span class="material-symbols-outlined text-3xl">apparel</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Costuras Ocultas</h3>
+              <p class="text-sage text-sm leading-relaxed">
+                Diseñadas para eliminar el roce y las molestias, ideales para
+                niños con alta sensibilidad táctil.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Characters Section -->
+      <section class="py-24 px-6 overflow-hidden" id="personajes">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold serif-font">
+              Personajes con significado
+            </h2>
+            <p class="text-sage mt-4">
+              Cada ilustración cuenta una parte de nuestra biodiversidad.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div class="bg-terracotta/5 rounded-3xl p-6">
+              <div
+                class="aspect-square bg-white rounded-2xl mb-4 flex items-center justify-center"
+                data-alt="Abstract illustration of a Peruvian vicuña"
+              >
+                <img
+                  src="assets/img/amaru.svg"
+                  alt="Amaru"
+                  class="w-3/4 h-3/4 object-contain"
+                />
+              </div>
+              <h4 class="text-lg font-bold mb-2">
+                <strong>Amaru</strong>, el jaguar juguetón
+              </h4>
+              <p class="text-sm text-sage">
+                En la selva del Perú, Amaru salta entre colores y sueños. No
+                corre para asustar, corre para jugar. Amaru nos enseña que la
+                fuerza más grande es la alegría.
+              </p>
+            </div>
+            <div class="bg-primary/5 rounded-3xl p-6">
+              <div
+                class="aspect-square bg-white rounded-2xl mb-4 flex items-center justify-center"
+                data-alt="Abstract illustration of a cock of the rocks bird"
+              >
+                <img
+                  src="assets/img/delfi.svg"
+                  alt="Delfi"
+                  class="w-3/4 h-3/4 object-contain"
+                />
+              </div>
+              <h4 class="text-lg font-bold mb-2">
+                <strong>Delfi</strong>, la delfín rosada
+              </h4>
+              <p class="text-sm text-sage">
+                En un río de la selva del Perú vive Delfi junto a su mamá. Delfi
+                es rosada y pequeña, pero muy valiente. Un día aprendió que no
+                importa cómo se ve, sino cómo se siente por dentro. Delfi nos
+                enseña que ser diferente también es una fortaleza.
+              </p>
+            </div>
+            <div class="bg-terracotta/5 rounded-3xl p-6">
+              <div
+                class="aspect-square bg-white rounded-2xl mb-4 flex items-center justify-center"
+                data-alt="Abstract illustration of a whale"
+              >
+                <img
+                  src="assets/img/Lloqui.svg"
+                  alt="Lloqui"
+                  class="w-3/4 h-3/4 object-contain"
+                />
+              </div>
+              <h4 class="text-lg font-bold mb-2">
+                <strong>Lloqui</strong>, el perro peruano
+              </h4>
+              <p class="text-sm text-sage">
+                En la costa del Perú vive Lloqui, un perro con un superpoder.
+                Con su piel siente el sol, el viento y las caricias más que
+                nadie, guiando a quienes lo rodean. Lloqui nos enseña que sentir
+                diferente es un talento que puede iluminar y ayudar a los demás.
+              </p>
+            </div>
+            <div class="bg-primary/5 rounded-3xl p-6">
+              <div
+                class="aspect-square bg-white rounded-2xl mb-4 flex items-center justify-center"
+                data-alt="Abstract illustration of a condor"
+              >
+                <img
+                  src="assets/img/pepito.svg"
+                  alt="Pepito"
+                  class="w-3/4 h-3/4 object-contain"
+                />
+              </div>
+              <h4 class="text-lg font-bold mb-2">
+                <strong>Pepito</strong>, el cuy valiente
+              </h4>
+              <p class="text-sm text-sage">
+                En la sierra del Perú, Pepito el cuy es pequeño, pero su
+                valentía es enorme. Cuando todos sienten miedo, él se anima a
+                mirar más de cerca. Pepito nos enseña que, aunque seas pequeño,
+                puedes ser valiente y aprender a ver a los demás con el corazón.
+              </p>
+            </div>
+            <div class="bg-terracotta/5 rounded-3xl p-6">
+              <div
+                class="aspect-square bg-white rounded-2xl mb-4 flex items-center justify-center"
+                data-alt="Abstract illustration of Piki"
+              >
+                <img
+                  src="assets/img/piki.svg"
+                  alt="Piki"
+                  class="w-3/4 h-3/4 object-contain"
+                />
+              </div>
+              <h4 class="text-lg font-bold mb-2">
+                <strong>Piki</strong>, el colibrí peruano
+              </h4>
+              <p class="text-sm text-sage">
+                Piki despierta temprano para saludar al sol. Con su vuelo
+                pequeñito llena el aire de colores. Piki nos enseña que incluso
+                lo más pequeño puede hacer grande el mundo.
+              </p>
+            </div>
+            <div class="bg-primary/5 rounded-3xl p-6">
+              <div
+                class="aspect-square bg-white rounded-2xl mb-4 flex items-center justify-center"
+                data-alt="Abstract illustration of Amaru"
+              >
+                <img
+                  src="assets/img/amaru.svg"
+                  alt="Amaru"
+                  class="w-3/4 h-3/4 object-contain"
+                />
+              </div>
+              <h4 class="text-lg font-bold mb-2">Amaru</h4>
+              <p class="text-sm text-sage">
+                El espíritu ancestral y la fuerza de la tierra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA / Footer -->
+      <footer class="bg-background-dark text-white py-20 px-6">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 lg:col-span-2 space-y-6">
+              <h2 class="text-3xl font-bold serif-font">
+                FÁBULA
+                <span class="text-primary text-base font-normal">by Cúneo</span>
+              </h2>
+              <p class="text-gray-400 max-w-sm">
+                Diseñada en Perú. Creada para el mundo. Ropa infantil que cuenta
+                historias y protege sensibilidades.
+              </p>
+              <div class="flex gap-4">
+                <a
+                  class="size-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-all"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-sm">share</span>
+                </a>
+                <a
+                  class="size-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-all"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-sm">mail</span>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-bold mb-6 text-primary">Navegación</h4>
+              <ul class="space-y-4 text-gray-400 text-sm">
+                <li>
+                  <a class="hover:text-white transition-colors" href="#"
+                    >Colecciones</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-white transition-colors" href="#"
+                    >Guía de tallas</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-white transition-colors" href="#"
+                    >Sostenibilidad</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-white transition-colors" href="#"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold mb-6 text-primary">Soporte</h4>
+              <ul class="space-y-4 text-gray-400 text-sm">
+                <li>
+                  <a class="hover:text-white transition-colors" href="#"
+                    >Envíos y Devoluciones</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-white transition-colors" href="#"
+                    >Preguntas Frecuentes</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-white transition-colors" href="#"
+                    >Términos de Servicio</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="pt-12 border-t border-white/10 text-center text-xs text-gray-500 uppercase tracking-widest"
+          >
+            © 2024 Fábula by Cúneo. Hecho con ❤️ en Perú.
+          </div>
+        </div>
+      </footer>
+    </main>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+    <script>
+      (function () {
+        const carousel = document.getElementById("carousel-nosotros");
+        if (!carousel) return;
+        const slides = carousel.querySelectorAll(".carousel-slide");
+        let current = 0;
+        setInterval(function () {
+          slides[current].style.opacity = "0";
+          current = (current + 1) % slides.length;
+          slides[current].style.opacity = "1";
+        }, 3000);
+      })();
+    </script>
+  </body>
+</html>
